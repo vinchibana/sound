@@ -5,19 +5,17 @@
 //  Created by 邱鑫 on 8/16/23.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct ContentView: View {
-    
     let tasks = ["task1", "task2", "task3"]
     var body: some View {
-        List(tasks, id:\.self) {
+        List(tasks, id: \.self) {
             task in
-                Text(task)
-            
+            Text(task)
         }
-        
+
         NavigationStack {
             VStack {
                 Text("welcome")
